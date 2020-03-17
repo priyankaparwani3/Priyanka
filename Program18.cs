@@ -5,7 +5,7 @@ using System;
 
 
 
-namespace Tutlane
+namespace Priyanka
 
 {
 
@@ -17,7 +17,7 @@ namespace Tutlane
 
         {
 
-            Users user = new Users("Suresh Dasari", 30);
+            Users user = new Users("Priyanka Parwani", 23);
 
             user.GetUserDetails();
 
