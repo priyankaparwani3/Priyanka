@@ -4,7 +4,7 @@ using System;
 
 
 
-namespace Tutlane
+namespace Priyanka
 
 {
 
@@ -72,7 +72,7 @@ namespace Tutlane
 
             Details d = new Details();
 
-            d.Name = "Suresh Dasari";
+            d.Name = "Priyanka Parwani";
 
             // Compile Time Error
 
@@ -80,7 +80,7 @@ namespace Tutlane
 
             d.Age = 32;
 
-            d.GetUserInfo("Hyderabad");
+            d.GetUserInfo("Mumbai");
 
             d.GetAge();
 
