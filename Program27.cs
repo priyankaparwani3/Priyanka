@@ -5,7 +5,7 @@ using System;
 
 
 
-namespace Tutlane
+namespace Priyanka
 
 {
 
@@ -15,7 +15,7 @@ namespace Tutlane
 
         private string location;
 
-        private string name = "Suresh Dasari";
+        private string name = "Priyanka Parwani";
 
         public string Location
 
@@ -43,7 +43,7 @@ namespace Tutlane
 
             {
 
-                if (value == "Suresh")
+                if (value == "Priyanka")
 
                     name = value;
 
@@ -69,7 +69,7 @@ namespace Tutlane
 
             // set accessor will invoke
 
-            u.Location = "Hyderabad";
+            u.Location = "Mumbai";
 
             // get accessor will invoke
 
