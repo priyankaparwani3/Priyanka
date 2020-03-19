@@ -1,58 +1,36 @@
-﻿
-
-using System;
-
-
-
-namespace Examples
-
+﻿using System;
+using System.IO;
+namespace exception
 {
-
-    class Program
-
+    class ExceptionHandling
     {
-
-        static void Main(string[] args)
-
+        public static void Main()
         {
-
-            string name = null;
-
+            StreamReader streamReader = null;
             try
-
             {
-
-                if (name.Length > 0) // Exception will occur
-
-                {
-
-                    Console.WriteLine("Name: " + name);
-
-                }
-
+                streamReader = new StreamReader("C:\\Samplefiles\\Data1.txt");
+                Console.WriteLine(streamReader.ReadToEnd());
+     
             }
-
+            catch(FileNotFoundException ex)
+            {
+                Console.WriteLine("Please check if the file {0} exists", ex.FileName);
+            }
             catch (Exception ex)
-
             {
-
-                Console.WriteLine("Exception: {0}", ex.Message);
+                Console.WriteLine(ex.Message);
 
             }
-
             finally
-
             {
-
-                Console.WriteLine("Finally Block.");
-
+                if (streamReader != null)
+                {
+                    streamReader.Close();
+                }
+                Console.WriteLine("Finally block");
             }
-
-            Console.ReadLine();
-
         }
-
+    
     }
-
 }
-
