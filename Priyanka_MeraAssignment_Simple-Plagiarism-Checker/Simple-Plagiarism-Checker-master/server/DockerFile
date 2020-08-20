@@ -1,0 +1,8 @@
+FROM python:3.8.1
+
+RUN pip install Flask gunicorn
+
+COPY src/ /plag
+WORKDIR /plag
+ENV PORT 8080
+

@@ -1,0 +1,134 @@
+<!DOCTYPE>
+<html>
+<title>Student</title>
+<head>
+<style>
+
+.login-page {
+  width: 80%;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+</style>
+
+ <script defer src="/__/firebase/7.9.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.9.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.9.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.9.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.9.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBA7kDQiO25NCON5oPh2h0Bzc1I7eeMTng",
+    authDomain: "plagarism-check.firebaseapp.com",
+    databaseURL: "https://plagarism-check.firebaseio.com",
+    projectId: "plagarism-check",
+    storageBucket: "plagarism-check.appspot.com",
+    messagingSenderId: "621931215883",
+    appId: "1:621931215883:web:837c0c92d8e8e668f7db0e",
+    measurementId: "G-H0JLY9EHVK"
+  };
+</script>
+
+<script>
+  	  function login() {
+			var email = document.getElementById("email").value;
+			var password = document.getElementById("password").value;
+			try {
+			  let app = firebase.app();
+			  firebase.auth().createsignInWithEmailAndPassword(email, password).catch(function(error) {
+				  // Handle Errors here.
+				  var errorCode = error.code;
+				  var errorMessage = error.message;
+				  window.alert(errorMessage);
+				  // ...
+				});
+			  }
+			  catch (e) {
+				  console.error(e);
+			}
+			firebase.auth().onAuthStateChanged(function(user) {
+			  if (user) {
+				// User is signed in.
+				 window.location = "index.html"
+			  } else {
+				// No user is signed in.
+				 window.location  = "signup.html"
+			  }
+			});
+		}
+</script>
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <input type="file" placeholder="File Path" id="file"/>
+    <button onclick="login()">Upload</button>
+   </div>
+</div>
+</body>
+</html>

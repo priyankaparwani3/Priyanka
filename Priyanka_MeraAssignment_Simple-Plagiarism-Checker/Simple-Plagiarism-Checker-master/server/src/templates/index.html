@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Assignment writer</title>
+<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+<header>
+<nav>
+	<div class= "logo"><h1 class="">MERA ASSIGNMENT</h1></div>
+	<div class="menu">
+		<a href="" class="active">HOME</a>
+		<a href="">ABOUT</a>
+		<a href="">SERVICES</a>
+		<a href="">CONTACT</a>
+		</div>
+</nav>
+<main>
+	
+	<section class="left">
+		<img src="{{ url_for('static', filename='professor.png') }}" alt="professor" height="70"                  width="70">
+		<h2>PROFESSOR</h2>
+		<p>Access,Evaluate and Grade anywhere and anytime</p>
+		<a href="{{ url_for('login') }}" target="_blank">LOGIN</a>
+		<a href="{{ url_for('signupt') }}" target="_blank">SIGNUP</a>
+	</section>
+	<section class="right">
+		<img src="{{ url_for('static', filename='student.png') }}" alt="student"height="70"                  width="70">
+		<h2>STUDENT</h2>
+		<p>Write,Store and Access upto 25MB of storage</p>
+		<a href="{{ url_for('login') }}" target="_blank">LOGIN</a>
+		<a href="{{ url_for('signup') }}" target="_blank">SIGNUP</a>
+	</section>
+
+</body>
+</html>
