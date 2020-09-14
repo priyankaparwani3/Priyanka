@@ -1,8 +1,8 @@
 {
   "type": "service_account",
   "project_id": "plagarism-check",
-  "private_key_id": "70f98c14c077ad38470fcd6106b6cd8ffd0cc56b",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQC2Yn+9JIdNm/3w\no7BJL1jqxIZ6OOKoFU4pWHcKMuNOp59GT9gv51LRuuHgeWVAPUHK24HkIVGMe8Y/\n8fCPasKFL+rlDDZIqS0plC1b8Bza5KWQdA9cnTjdyDow2h5fmbYCYxBiWADK2hOU\nCvQ4i2OhxPE40s71Ef8znJsahJCeeCNfsotK3JxI5szh9uVfiezO5V95Gu1d+0Zu\nZicAg+xKIrrlX8aahf740vDHMMYc8C2fGlTlxKnRSFjf/5w1IG/KdlBbHhxhEpqq\n2++WKlqiPUlkuf+XGYUf3kQjE2e7CwRPTSo4/NoG+/x/gKLyUDl3V85v80rvru4v\nz1Lw3C5rAgMBAAECgf9aeoLkUjrNRZW0y3+oztRNozETcSUAPZGI8VoctSIO4xkg\nyHt3SErNwOhNc+vG8pyxBjRp+B18k+rFzkCI5W2apSridix333WIKvpVociuzr9T\n6j+0skqDu9EiaxKmWprwlDSMlRvPhmAwET8Wzg+fMRR6HBqPeV4hPI+1mA4mjpu+\nKiHYQRkP117NgBMsmXwqDAP25btDx1WOz8pwRhH8aQ8HGpurf9L4S8rDp53d/9wq\nduvSFHm8kat1UTrlxF4SpFMTXaOSGcyAD8HblijSLoDdyn7dcjsLYS5CKDbfEmgL\nmJLuZjdQlDLoACmfnLqfLTTl+0FweIz2as1qKsECgYEA7EjhnFxTQx9uDTZj7OMi\nQ/JepcmRlKaXICOrmftQL0F7FgflWWETWphTtIWba1XCnZayMCghUE3I5ojnKCWf\n4VscBMJPTDUS+edOIkhbFEYMTjif/mAhQcf99JBmMcgoR1BbceFogy6mz14+Kvs9\nO4Mi2UjpSwUo4qBZoJQIQiECgYEAxZpMJVaTiusbJzDf0NO9AgfM6gpruSU6oJMA\nZjd3P4ixofda6KQQ4+9fdpdcJVEFzCwJOlbVJXlUS/xptiWuYmlJXk7Zd5tjq6WZ\nYJ2/HTk8a/UVPmFq98WDIfC8YjzkMaxLLjVdnfj/esQiE+93EaPEa+44DS2YNQRw\nH41EdwsCgYEA1Au73JTGbBCCtPzAxFA56fxSkDnKmjq+mSspzvBIT4BWM7k2S/Xg\nZocZZ4IXrkWyd7ZLhwgcjXKg/rKRr+fECXu4M1Ul0OA4fWjlJ8MDabhLRs9uVdxz\nPBN8hsQn0jksXINy7Uo6fq+ZJ7QN2ojJtOTEm3bhVl/1BxycEo2Gs8ECgYAgkQJ1\nsOQWJBNQjTSF5S+kUwbJl7gTRnh4GGIbdo63sN6ds/eOmeOSvVO9Zsqv979929AV\nhlQQngNvloURmPo5i+KkoVgj5z8w/dTeYIEr3s//dt/ubP3FIg8vm85gXmq5aQzm\n67KnI29vmz2GjZPRG2124EbqnRYVvsp/2Lds6wKBgHExefefFvgd/GM/KoLA3qS1\n4k+q5e8Y2CyCSirWpncU/tdVKjvpGqxd55O7jbNyE33SVYIPRH5WGMe2gKIdFEg3\nsIUp+7fJlOY4Ee+IP1PJHCmh8FBOQxAzxzIC8cXtjev/XlHLqm0Gl1FrtcYrKAlr\nbsfcQlloOcHoyPQmztac\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "xxxxxxxxxxxxx",
+  "private_key": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
   "client_email": "firebase-adminsdk-ifuhm@plagarism-check.iam.gserviceaccount.com",
   "client_id": "105658619714459587631",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
